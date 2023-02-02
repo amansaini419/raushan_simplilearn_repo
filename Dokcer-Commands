@@ -35,3 +35,170 @@ root@ip-172-31-87-9:~# history
    34  docker rmi httpd
    35  docker images
    36  history
+
+
+
+
+03-Dec-2022
+
+root@ip-172-31-89-221:/# history
+    1  apt update -y
+    2  clear
+    3  docker version
+    4  apt install docker.io
+    5  clear
+    6  docker version
+    7  history
+    8  pwd
+    9  clear
+   10  uname -a
+   11  docker version
+   12  docker info
+   13  clear
+   14  docker images
+   15  docker pull httpd
+   16  docker images
+   17  docker pull tomcat
+   18  clear
+   19  docker images
+   20  docker pull mysql
+   21  docker images
+   22  docker run -it -d -p 82:80 httpd
+   23  docker ps
+   24  docker exec -it f198c220343f /bin/bash
+   25  cd /
+   26  pwd
+   27  ls -l
+   28  docker images
+   29  history
+   30  clear
+   31  docker ps
+   32  docker stop f198c220343f
+   33  docker ps
+   34  docker ps -a
+   35  docker run -it -d -p 82:80 httpd
+   36  docker ps
+   37  docker exec -it 78c05489d7dc /bin/bash
+   38  docker ps
+   39  docker commit 78c05489d7dc httpd_updated
+   40  docker images
+   41  docker rmi tomcat
+   42  docker images
+   43  docker ps
+   44  docker rm -f 78c05489d7dc
+   45  docker ps
+   46  docker ps -a
+   47  docker images
+   48  history
+   
+   
+   04-Dec-2022
+   
+   root@ip-172-31-84-8:~/project1# history
+    1  apt update
+    2  clear
+    3  apt install docker.io
+    4  clear
+    5  docker version
+    6  history
+    7  docker images
+    8  docker run -it -d -p 83:80 httpd
+    9  docker ps
+   10  clear
+   11  pwd
+   12  mkdir project1
+   13  cd project1/
+   14  pwd
+   15  touch Dockerfile
+   16  vi Dockerfile
+   17  docker ps
+   18  docker exec -it 0169e4c38728 /bin/bash
+   19  docker ps
+   20  docker rm -f 0169e4c38728
+   21  docker ps
+   22  docker ps -a
+   23  vi Dockerfile
+   24  touch index1.html
+   25  vi index1.html
+   26  ls -l
+   27  docker build . -t httpd1
+   28  docker images
+   29  docker run -itd -p 83:80 httpd1:latest
+   30  docker ps
+   31  docker exec -it 837518d1da77 /bin/bash
+   32  vi index1.html
+   33  cat Dockerfile
+   34  cat index1.html
+   35  history
+   36  cat Dockerfile
+   37  cat index1.html
+   38  ls -l
+   39  pwd
+   40  vi Dockerfile
+   41  docker ps
+   42  docker exec -it 837518d1da77 /bin/bash
+   43  history
+   44  cat Dockerfile
+   45  docker volume ls
+   46  docker volume create simpli-volume
+   47  docker volume ls
+   48  docker ps
+   49  docker rm -f 837518d1da77
+   50  docker run -it -d --mount source=simpli-volume,target=/usr/local/apache2/htdocs -p 83:80 httpd1
+   51  docker ps
+   52  docker exec -it 26732e223dc2 /bin/bash
+   53  docker run -it -d --mount source=simpli-volume,target=/usr/local/apache2/htdocs -p 84:80 httpd1
+   54  docker ps
+   55  docker exec -it 1ac708d769e6 /bin/bash
+   56  history
+   
+   
+   57  docker-compose --version
+   58  apt  install docker-compose
+   59  docker-compose --version
+   60  cd ..
+   61  mkdir project2
+   62  cd project
+   63  cd project2
+   64  pwd
+   65  clear
+   66  vi docker-compose.yaml
+   67  ls -l
+   68  touch docker-compose.yaml
+   69  vi docker-compose.yaml
+   70  ls -l
+   71  docker ps
+   72  docker rm -f 1ac708d769e6 26732e223dc2
+   73  docker ps
+   74  ls -l
+   75  docker-compose up -d
+   76  docker ps
+   77  docker logs d6993523d4c0
+   78  docker ps
+   79  docker logs 032e1e547b29
+   80  docker stats
+   81  docker ps
+   82  history
+   docker-compose down
+
+
+10-Dec
+docker pull httpd
+    7  docker images
+    8  docker login
+    9  docker images
+   10  docker image tag httpd:latest raushan8586/simplilearn10dec:latest
+   11  docker image push raushan8586/simplilearn10dec:latest
+   12  history
+
+ docker network ls
+   27  cat docker-compose.yaml
+   28  docker network inspect project1_default
+   29  docker ps
+   30  docker describe 4b33c4401489
+   31  docker inspect 4b33c4401489
+   32  docker ps
+   33  docker inspect 5f53c9c0afca
+   34  docker network ls
+   35  docker network inspect project1_default
+   36  history
